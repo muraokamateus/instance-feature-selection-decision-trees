@@ -1,0 +1,5 @@
+datasets/
+results/parts/
+results/log_*.txt
+__pycache__/
+*.pyc
