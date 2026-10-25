@@ -1,5 +1,7 @@
 # Seleção de instâncias e de atributos em árvores de decisão
 
+Autor: Mateus Yi Muraoka. Trabalho desenvolvido na disciplina Aprendizado de Máquina (CA021IC), UTFPR, 2026/2, ministrada pelo Prof. Dr. Adriano Rivolli.
+
 Código e resultados do artigo "Efeito da Seleção de Instâncias e de Atributos sobre a Estrutura de Árvores de Decisão" (Aprendizado de Máquina, UTFPR, 2026).
 
 O experimento treina árvores CART (scikit-learn, Gini, sem poda) em 48 conjuntos do OpenML-CC18. Cada árvore usa uma fração das instâncias e uma fração dos atributos (20% a 100% em cada eixo). Os atributos são escolhidos por informação mútua, com um controle de atributos sorteados. A validação é cruzada estratificada, 5 partições com 3 repetições. Ao todo são 36.000 árvores.
@@ -14,7 +16,7 @@ python code/02_experimento.py    # treina as árvores, grava em results/raw/
 python code/03_analise.py        # testes estatísticos, grava results/analise.json
 ```
 
-Rode os comandos a partir da raiz do repositório. O passo 3 pode ser interrompido e retomado, porque cada partição é salva à parte. A variável `N_JOBS` controla quantos processos rodam em paralelo.
+Rode os comandos a partir da raiz do repositório. O `02_experimento.py` pode ser interrompido e retomado, porque cada partição é salva à parte. A variável `N_JOBS` controla quantos processos rodam em paralelo.
 
 ## Pastas
 
