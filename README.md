@@ -14,13 +14,14 @@ python code/baixar_cc18.py       # baixa os conjuntos para datasets/ (não versi
 python code/01_prepara.py        # lista dos conjuntos que passam nos filtros
 python code/02_experimento.py    # treina as árvores, grava em results/raw/
 python code/03_analise.py        # testes estatísticos, grava results/analise.json
+python code/04_caracteristicas.py  # análises por n, d e K e tabela de compromisso (Fig. 3)
 ```
 
 Rode os comandos a partir da raiz do repositório. O `02_experimento.py` pode ser interrompido e retomado, porque cada partição é salva à parte. A variável `N_JOBS` controla quantos processos rodam em paralelo.
 
 ## Pastas
 
-- `code/`: os quatro scripts.
+- `code/`: os cinco scripts.
 - `results/raw/`: uma tabela por conjunto, com uma linha por árvore (profundidade, nós, folhas, atributos usados, F1 macro).
 - `results/`: catálogo dos conjuntos, lista dos 48 selecionados e as estatísticas finais.
 
